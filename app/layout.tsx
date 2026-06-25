@@ -21,8 +21,8 @@ export default function RootLayout({
         className={`${inter.className} flex flex-col min-h-screen bg-slate-950 text-slate-100`}
       >
         {/* NAVBAR GLOBAL */}
-        <header className="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/80 backdrop-blur-md">
-          <div className="mx-auto flex max-w-7xl items-center justify-between p-4 md:px-8">
+        <header className="sticky top-0 z-50 border-b border-slate-800 bg-black">
+          <div className="mx-auto flex max-w-7xl items-center justify-between py-8 md:px-8">
             {/* LOGO */}
             <Link
               href="/"
@@ -32,28 +32,28 @@ export default function RootLayout({
             </Link>
 
             {/* MENIU LINKURI */}
-            <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
+            <nav className="hidden md:flex items-center gap-10 text-lg font-medium text-slate-200">
               <Link
                 href="/om-oss"
-                className="hover:text-white transition-colors"
+                className="hover:text-blue-400 transition-colors"
               >
                 Vad är vi?
               </Link>
               <Link
                 href="/formatet"
-                className="hover:text-white transition-colors"
+                className="hover:text-blue-400 transition-colors"
               >
                 Formatet
               </Link>
               <Link
                 href="/vardet"
-                className="hover:text-white transition-colors"
+                className="hover:text-blue-400 transition-colors"
               >
                 Värdet
               </Link>
               <Link
                 href="/medlemskap"
-                className="hover:text-white transition-colors"
+                className="hover:text-blue-400 transition-colors"
               >
                 Medlemskap
               </Link>
@@ -77,7 +77,7 @@ export default function RootLayout({
         </main>
 
         {/* FOOTER GLOBAL */}
-        <footer className="border-t border-slate-900 bg-slate-950 py-6 text-center text-xs text-slate-500">
+        <footer className="border-t border-slate-900 bg-black py-6 text-center text-sm text-white/70">
           <p>
             © {new Date().getFullYear()} Nerdklubben. I samarbete med Tech
             Trainee Talent & Konnekt of Sweden.
