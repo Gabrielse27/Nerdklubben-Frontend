@@ -33,11 +33,15 @@ export default function RootLayout({
 
             {/* MENIU LINKURI */}
             <nav className="hidden md:flex items-center gap-10 text-lg font-medium text-slate-200">
+              <Link href="/" className="hover:text-blue-400 transition-colors">
+                Home
+              </Link>
+
               <Link
                 href="/om-oss"
                 className="hover:text-blue-400 transition-colors"
               >
-                Vad är vi?
+                Om oss
               </Link>
               <Link
                 href="/formatet"

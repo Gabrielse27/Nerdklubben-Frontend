@@ -111,7 +111,7 @@ export default function OmOssPage() {
 
           {/* Citat som är på bilden*/}
           <div className="relative inset-0 flex items-center p-8 sm:p-12">
-            <h2 className="text-white text-2xl sm:text-3xl font-serif italic font-bold max-w-md leading-snug">
+            <h2 className="text-white text-2xl lg:text-4xl font-serif italic font-bold max-w-md leading-snug">
               ”Runt bordet möts erfarenhet, ansvar och riktning”
             </h2>
           </div>
@@ -123,7 +123,7 @@ export default function OmOssPage() {
             NERDKLUBBEN
           </h1>
 
-          <div className="space-y-6 text-sm sm:text-base text-slate-700 font-light leading-relaxed">
+          <div className="space-y-6 text-sm sm:text-base text-slate-900 font-normal leading-relaxed">
             <p className="font-normal text-slate-900">
               Ibland behövs ett rum där tempot sänks och perspektiven höjs.{" "}
               <br />
@@ -144,9 +144,9 @@ export default function OmOssPage() {
               förstå, utmana och bygga vidare.
             </p>
 
-            <div className="pt-4 border-t border-slate-100 text-xs sm:text-sm text-slate-900">
+            <div className="pt-4 border-t border-slate-100 text-sm sm:text-base text-slate-900">
               <p>Det är inte tempot som avgör värdet.</p>
-              <p className="font-medium text-slate-900">Det är djupet</p>
+              <p className=" text-slate-900">Det är djupet</p>
             </div>
           </div>
         </div>
