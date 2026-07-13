@@ -155,7 +155,7 @@ export default function FormatetPage() {
 
         {/* FOOTER TEXT INUTI DEN BLÅ KOLUMNEN (NERDKLUBBEN LÄNGST NER) */}
         <div className="mt-auto pt-8 border-t border-white/10 text-right">
-          <span className="text-sm font-bold tracking-widest text-slate-100/60 uppercase">
+          <span className="text-sm font-bold tracking-widest text-white uppercase">
             Nerdklubben
           </span>
         </div>
