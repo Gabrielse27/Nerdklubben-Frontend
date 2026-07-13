@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link";
+import ActiveLink from "./ActiveLink";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -33,34 +34,13 @@ export default function RootLayout({
 
             {/* MENIU LINKURI */}
             <nav className="hidden md:flex items-center gap-10 text-lg font-medium text-slate-200">
-              <Link href="/" className="hover:text-blue-400 transition-colors">
-                Home
-              </Link>
+              <ActiveLink href="/">Home</ActiveLink>
 
-              <Link
-                href="/om-oss"
-                className="hover:text-blue-400 transition-colors"
-              >
-                Om oss
-              </Link>
-              <Link
-                href="/formatet"
-                className="hover:text-blue-400 transition-colors"
-              >
-                Formatet
-              </Link>
-              <Link
-                href="/vardet"
-                className="hover:text-blue-400 transition-colors"
-              >
-                Värdet
-              </Link>
-              <Link
-                href="/medlemskap"
-                className="hover:text-blue-400 transition-colors"
-              >
-                Medlemskap
-              </Link>
+              <ActiveLink href="/om-oss">Om oss</ActiveLink>
+              <ActiveLink href="/formatet">Formatet</ActiveLink>
+              <ActiveLink href="/vardet">Värdet</ActiveLink>
+              <ActiveLink href="/vision">Vision</ActiveLink>
+              <ActiveLink href="/medlemskap">Medlemskap</ActiveLink>
             </nav>
 
             {/* BUTON ANSÖKAN */}

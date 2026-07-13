@@ -16,12 +16,12 @@ export default function HomePage() {
       {/* BAKGRUNDSBILD (HÄMTAS FRÅN PUBLIC-MAPPEN OCH PLACERAS LÄNGST BAK) */}
       <div className="absolute inset-0 z-0 h-full w-full"></div>
 
-      <h2 className="text-left text-xl ml-2 font-black tracking-tight text-sky-900/90 sm:text-3xl md:text-4xl mb-6">
+      <h2 className="text-left text-xl ml-2 font-black tracking-tight text-sky-900/90 sm:text-4xl md:text-6xl mb-6">
         Nerdklubben
       </h2>
 
       <div className="mb-6 flex flex-col ml-3 items-center gap-3 md:flex-row md:gap-4">
-        <span className="text-xs uppercase tracking-widest text-slate-500 font-semibold">
+        <span className="text-sm uppercase tracking-widest text-slate-500 font-semibold">
           December 2026
         </span>
         <div className="flex gap-2">
@@ -35,7 +35,7 @@ export default function HomePage() {
       </div>
       {/* STRATEGISK SUBRUBRIK OCH INTRODUKTIONSTEXT */}
       <div className="z-10 ml-0 max-w-2xl text-left px-4">
-        <h2 className="text-lg font-bold tracking-wide text-slate-200 sm:text-xl uppercase mb-6 leading-tight">
+        <h2 className="text-2xl font-bold tracking-wide text-slate-200 sm:text-4xl uppercase mb-6 leading-tight">
           Ett
           <br />
           strategiskt <br />
@@ -45,7 +45,7 @@ export default function HomePage() {
           techledare
         </h2>
 
-        <p className="text-left text-sm sm:text-base text-gray-300 leading-relaxed font-medium mb-8 max-w-sm">
+        <p className="text-left text-lg text-gray-300 leading-relaxed font-medium mb-8 max-w-sm">
           Nerdklubben samlar personer <br />
           som leder, bygger och påverkar <br />
           tech i Helsingborg. <br />
@@ -55,15 +55,22 @@ export default function HomePage() {
         </p>
 
         {/* EXKLUSIVITETSNOTIS (VIKTIG DETALJ FRÅN MATERIALET) */}
-        <div className="mb-8 text-sm italic text-slate-500 space-y-1">
-          <p>Begränsat antal medlemmar. Ansökan krävs.</p>
-          <p className="text-xs not-italic text-slate-500 font-medium">
-            I samarbete med Tech Trainee Talent
-          </p>
+
+        <div className="absolute right-8 sm:right-16 md:right-24 bottom-36 flex flex-col items-end z-10 text-right">
+          <div className=" mt-18 text-base   text-slate-300  space-y-1">
+            <p className="text-xl  font-medium">
+              Begränsat antal medlemmar.
+              <br />
+              Ansökan krävs.
+            </p>
+            <p className="text-2xl  font-medium">
+              I samarbete med Tech Trainee Talent
+            </p>
+          </div>
         </div>
 
         {/* INTERAKTIV KNAPP FÖR ATT GÅ DIREKT TILL ANSÖKNINGSFORMULÄRET */}
-        <div className="flex justify-start">
+        <div className="absolute  right-8 sm:right-16 md:right-24 bottom-10 z-10">
           <Link
             href="/ansokan"
             className="group relative inline-flex  items-center gap-2 overflow-hidden rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-3 font-semibold text-white transition-all hover:from-blue-500 hover:to-indigo-500 shadow-lg shadow-blue-900/30"

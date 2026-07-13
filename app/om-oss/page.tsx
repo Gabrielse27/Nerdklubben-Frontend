@@ -9,10 +9,10 @@ export default function OmOssPage() {
         <div>
           {/* SECȚIUNEA 1: Vad är Nerdklubben? */}
           <div className="mb-12">
-            <h2 className="text-2xl font-bold mb-4 tracking-tight">
+            <h2 className="text-2xl font-bold mb-4 tracking-tight mt-6">
               Vad är Nerdklubben?
             </h2>
-            <div className="space-y-4 text-[#E1D3BE] font-light text-sm leading-relaxed">
+            <div className="space-y-4 text-[#E1D3BE] font-light text-base leading-relaxed mt-10">
               <p>
                 Nerdklubben är ett strategiskt tech
                 <br />
@@ -48,12 +48,12 @@ export default function OmOssPage() {
 
           {/* SEKTION 2: Vem är detta för? */}
           <div className="mb-12">
-            <h2 className="text-2xl font-bold mb-4 tracking-tight">
+            <h2 className="text-2xl font-bold mb-4 tracking-tight mt-18">
               Vem är detta för?
             </h2>
-            <div className="space-y-4 text-sm font-light  text-[#E1D3BE]  ">
+            <div className="space-y-4 text-base font-light  text-[#E1D3BE]  ">
               <div>
-                <p className=" font-normal mb-1">Detta är inte:</p>
+                <p className=" font-normal mt-8">Detta är inte:</p>
                 <ul className="list-disc list-inside space-y-1 text-[#E1D3BE]">
                   <li>En öppen nätverksträff</li>
                   <li>Ett säljforum</li>
@@ -73,7 +73,7 @@ export default function OmOssPage() {
         </div>
 
         {/* SEKTION 3: Samarbete  */}
-        <div className="border-t border-white/20 pt-6 mt-8">
+        <div className="border-t border-white/0 pt-6 ">
           <h3 className="text-2xl font-bold mb-3">
             Samarbete med Tech
             <br />
@@ -81,7 +81,7 @@ export default function OmOssPage() {
             <br />
             och Konnekt of sweden
           </h3>
-          <p className="text-sm text-[#E1D3BE] font-light leading-relaxed">
+          <p className="text-base text-[#E1D3BE] font-light leading-relaxed mt-10">
             Nerdklubben verkar i samarbete
             <br />
             med Tech Trainee Talent och
@@ -119,12 +119,12 @@ export default function OmOssPage() {
 
         {/* Nedredelen: Text på vit bakrund */}
         <div className="bg-white text-slate-900 p-8 sm:p-12 flex-1">
-          <h1 className="text-3xl font-black tracking-wider mb-6 text-black">
+          <h1 className="text-3xl font-black tracking-wider mt-8 text-black">
             NERDKLUBBEN
           </h1>
 
           <div className="space-y-6 text-sm sm:text-base text-slate-900 font-normal leading-relaxed">
-            <p className="font-normal text-slate-900">
+            <p className="font-normal text-slate-900 mt-10">
               Ibland behövs ett rum där tempot sänks och perspektiven höjs.{" "}
               <br />
               Ett sammanhang där samtal får ta tid och där rätt personer möts
