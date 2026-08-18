@@ -19,11 +19,12 @@ export default function RootLayout({
   return (
     <html
       lang="sv"
-      className="h-full bg-slate-950 text-slate-100 dark suppressHydrationWarning"
+      className="h-full bg-slate-950 text-slate-100 dark "
+      suppressHydrationWarning={true}
     >
       <body
+        suppressHydrationWarning={true}
         className={`${inter.className} flex flex-col min-h-screen bg-slate-950 text-slate-100`}
-        suppressHydrationWarning
       >
         {/* NAVBAR GLOBAL */}
         <header className="sticky top-0 z-50 border-b border-slate-800 bg-black">
