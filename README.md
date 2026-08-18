@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Nerdklubben Application
 
-## Getting Started
 
-First, run the development server:
+* A fullstack web application for **Nerdklubben** featuring a member application form, backend persistence in SQL Server, and automatic confirmation emails sent via SendGrid.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+* A new member who is registered in the form on web page Nerdklubben its will be registered in the SQL Server database, and after that the new member will get a notification on e-mail that the registration its confirmed.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 1. Running the Frontend (Next.js)
+1. Open PowerShell and make sure you navigate to the correct frontend folder:
+   ```powershell
+   cd nerdklubben-web
+   npm run dev
+  Open the application in your browser:   http://localhost:3000 or (http://192.168.1.112:3000).
+  
+  * Ensure the backend API is running before testing the form( press Play).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 2. Running the Backend
 
-## Learn More
+* Ensure the backend API is running before testing the form (press **Play / F5**).
+  
+* When backend its starting  , Swagger UI it will be open directly and  its possible to test directly the database.
+  
+* Configure the required **SendGrid API Key** locally using .NET User Secrets to enable confirmation emails (the API key is provided separately via email).
+---
 
-To learn more about Next.js, take a look at the following resources:
+ ## Technologies & API Configuration  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* **Frontend:** Next.js,TypeScript, Tailwind CSS
+* **Backend:** ASP.NET Core Web API , Entity Framework Core
+* **Database:** SQL Server 
+* **Extern integration program:** SendGrid API (for e-mail notification)
+* **Swagger:** For testing database
+* **Backend API URL (`https://localhost:7138/swagger`):** The secure local endpoint where the ASP.NET Core Web API runs to receive form submissions, interact with SQL Server, and trigger SendGrid emails.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
