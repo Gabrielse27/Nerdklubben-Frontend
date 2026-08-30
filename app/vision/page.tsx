@@ -3,7 +3,10 @@ import Image from "next/image";
 export default function VisionPage() {
   return (
     // Huvudcontainer med responsiv grid: 1 kolumn på mobil, 2 kolumner på stora skärmar
-    <section className="grid grid-cols-1 md:grid-cols-2 min-h-screen w-full bg-white text-slate-800">
+    <section
+      className="grid grid-cols-1 md:grid-cols-2 w-full bg-white h-auto text-slate-800 rounded-2xl overflow-hidden
+       shadow-2xl mb-56 sm:mb-88 md:mb-[544px] lg:mb-[640px] xl:mb-12"
+    >
       <div className="md:col-span-1 bg-[#43708C] text-white p-8 sm:p-12 md:p-16 flex flex-col justify-between space-y-12 min-h-full">
         {/* Innehållsblock för de fyra huvudpunkterna */}
         <div className="space-y-10 mt-8">

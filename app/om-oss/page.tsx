@@ -3,11 +3,14 @@ import Image from "next/image";
 
 export default function OmOssPage() {
   return (
-    <div className="w-full min-h-screen grid grid-cols-1 md:grid-cols-2 bg-white text-slate-900">
+    <div
+      className="grid grid-cols-1 md:grid-cols-2 w-full bg-white h-auto text-slate-800 rounded-2xl overflow-hidden
+       shadow-2xl mb-56 sm:mb-88 md:mb-[544px] lg:mb-[640px] xl:mb-12"
+    >
       {/* Vänster sidan: Färgen blå.grå */}
       <div className="bg-[#467393] text-white p-8 sm:p-12 flex flex-col justify-start gap-6">
         <div>
-          {/* SECȚIUNEA 1: Vad är Nerdklubben? */}
+          {/* SEKTION 1: Vad är Nerdklubben? */}
           <div className="mb-12">
             <h2 className="text-2xl font-bold mb-4 tracking-tight mt-6">
               Vad är Nerdklubben?

@@ -4,7 +4,10 @@ import Image from "next/image";
 
 export default function MedlemskapPage() {
   return (
-    <div className="flex w-full max-w-[1200px] flex-col bg-white shadow-md md:flex-row">
+    <div
+      className="flex w-full max-w-[1200px] flex-col bg-white shadow-md md:flex-row rounded-2xl
+    overflow-hidden shadow-2xl mb-56 sm:mb-88 md:mb-[544px] lg:mb-[640px] xl:mb-12"
+    >
       {/* Col vänster (vit) */}
       <div className="flex flex-col md:w-[50%] bg-white">
         <div className="relative w-full h-[45vh] md:h-[90vh]">
