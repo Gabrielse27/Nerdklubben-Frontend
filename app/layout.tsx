@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import ActiveLink from "./ActiveLink";
+import Navbar from "./Navbar";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,53 +20,22 @@ export default function RootLayout({
   return (
     <html
       lang="sv"
-      className="h-full bg-slate-950 text-slate-100 dark "
+      className=" bg-slate-950 text-slate-100 dark"
       suppressHydrationWarning={true}
     >
       <body
         suppressHydrationWarning={true}
-        className={`${inter.className} flex flex-col min-h-screen bg-slate-950 text-slate-100`}
+        className={`${inter.className} flex flex-col min-h-screen bg-slate-950 text-slate-100  antialiased overflow-x-hidden`}
       >
-        {/* NAVBAR GLOBAL */}
-        <header className="sticky top-0 z-50 border-b border-slate-800 bg-black">
-          <div className="mx-auto flex max-w-7xl items-center justify-between py-8 md:px-8">
-            {/* LOGO */}
-            <Link
-              href="/"
-              className="text-xl font-bold tracking-wider text-slate-100 hover:text-blue-400 transition-colors"
-            >
-              NERDKLUBBEN
-            </Link>
+        {/* RESPONSIV NAVIGERINGSFÄLT MED HAMBURGERMENY */}
+        <Navbar />
 
-            {/* MENIU LINKURI */}
-            <nav className="hidden md:flex items-center gap-10 text-lg font-medium text-slate-200">
-              <ActiveLink href="/">Home</ActiveLink>
-
-              <ActiveLink href="/om-oss">Om oss</ActiveLink>
-              <ActiveLink href="/formatet">Formatet</ActiveLink>
-              <ActiveLink href="/vardet">Värdet</ActiveLink>
-              <ActiveLink href="/vision">Vision</ActiveLink>
-              <ActiveLink href="/medlemskap">Medlemskap</ActiveLink>
-            </nav>
-
-            {/* BUTON ANSÖKAN */}
-            <div>
-              <Link
-                href="/ansokan"
-                className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-500 transition-colors"
-              >
-                Ansök nu
-              </Link>
-            </div>
-          </div>
-        </header>
-
-        {/* CONȚINUTUL PAGINILOR */}
-        <main className="flex-1 mx-auto w-full max-w-7xl p-4 md:p-8">
+        {/* SIDANS HUVUDINNEHÅLL */}
+        <main className="w-full max-w-7xl mx-auto pb-20 md:pb-0 flex-1 px-4 pt-8">
           {children}
         </main>
 
-        {/* FOOTER GLOBAL */}
+        {/* GLOBALT SIDFOT */}
         <footer className="border-t border-slate-900 bg-black py-6 text-center text-sm text-white/70">
           <p>
             © {new Date().getFullYear()} Nerdklubben. I samarbete med Tech

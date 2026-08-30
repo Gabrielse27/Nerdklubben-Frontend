@@ -3,7 +3,10 @@ import Image from "next/image";
 
 export default function VardetPage() {
   return (
-    <div className="w-full min-h-screen grid grid-cols-1 md:grid-cols-2 bg-white text-slate-900">
+    <div
+      className="grid grid-cols-1 md:grid-cols-2 w-full bg-white h-auto text-slate-800 rounded-2xl overflow-hidden
+       shadow-2xl mb-56 sm:mb-88 md:mb-[544px] lg:mb-[640px] xl:mb-12"
+    >
       {/* VÄNSTER KOLUMN: BLÅ BAKGRUND (VÄRDET AV ATT VARA MED) */}
       <div className="bg-[#467393] text-white p-8 sm:p-12 md:p-16 flex flex-col justify-between">
         <div>
