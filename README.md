@@ -5,6 +5,8 @@
 
 * A new member who is registered in the form on web page Nerdklubben its will be registered in the SQL Server database, and after that the new member will get a notification on e-mail that the registration its confirmed.
 
+* Fully responsive design optimized for mobile, tablet, and desktop views with responsive navigation.
+
 ### 1. Running the Frontend (Next.js)
 1. Open PowerShell and make sure you navigate to the correct frontend folder:
    ```powershell
@@ -26,7 +28,7 @@
 
  ## Technologies & API Configuration  
 
-* **Frontend:** Next.js,TypeScript, Tailwind CSS
+* **Frontend:** Next.js,TypeScript, Tailwind CSS, Responsive Design & Mobile Navigation
 * **Backend:** ASP.NET Core Web API , Entity Framework Core
 * **Database:** SQL Server 
 * **Extern integration program:** SendGrid API (for e-mail notification)
